@@ -15,7 +15,7 @@ import { getStylingAdvice } from './services/geminiService';
 import { Dashboard } from './components/Dashboard';
 import { LegalModal } from './components/LegalModals';
 import { AuthModal } from './components/AuthModal';
-import { supabase } from './lib/supabase';
+import { supabase } from './utils/supabase';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'home' | 'book' | 'gallery' | 'resources' | 'faq' | 'about' | 'consult' | 'admin'>('home');
