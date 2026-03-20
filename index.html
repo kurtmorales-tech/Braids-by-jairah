@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Braids By Jaira | Premium Hair Artistry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              braid: {
+                bg: "#FDFBF7",
+                panel: "#FFFFFF",
+                primary: "#B48B5E", // Rich Gold/Bronze
+                secondary: "#D4A5A5", // Muted Rose
+                accent: "#5C524F", // Warm Cocoa
+                text: "#2D241E", // Dark Espresso
+                muted: "#9A8F85", // Sandy Grey
+                light: "#F5EFED", // Off-white
+                dark: {
+                  bg: "#12100E", // Deepest Charcoal/Espresso
+                  panel: "#1C1816", // Lighter Dark Panel
+                  text: "#E8E2DE", // Soft Cream Text
+                  muted: "#7A6F66", // Desaturated Grey for dark
+                }
+              },
+            },
+            backgroundImage: {
+              "glass": "linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 100%)",
+              "glass-dark": "linear-gradient(145deg, rgba(28, 24, 22, 0.95) 0%, rgba(18, 16, 14, 0.8) 100%)",
+            },
+            boxShadow: {
+              "soft": "0 10px 40px -10px rgba(180, 139, 94, 0.1)",
+              "soft-dark": "0 10px 40px -10px rgba(0, 0, 0, 0.5)",
+              "embossed": "inset 2px 2px 5px rgba(255,255,255,0.8), inset -2px -2px 5px rgba(0,0,0,0.05)",
+              "embossed-dark": "inset 2px 2px 5px rgba(255,255,255,0.05), inset -2px -2px 5px rgba(0,0,0,0.4)",
+              "gold-glow": "0 0 25px -5px rgba(180, 139, 94, 0.2)",
+              "gold-glow-dark": "0 0 25px -5px rgba(180, 139, 94, 0.4)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FDFBF7;
+        color: #2D241E;
+        -webkit-font-smoothing: antialiased;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+
+      .dark body {
+        background-color: #12100E;
+        color: #E8E2DE;
+      }
+      
+      h1, h2, h3, h4, .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+
+      .bg-dots {
+        background-image: radial-gradient(#B48B5E 0.5px, transparent 0.5px);
+        background-size: 32px 32px;
+        opacity: 0.03;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FDFBF7;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #12100E;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D4A5A5;
+        border-radius: 10px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #B48B5E;
+      }
+
+      /* Custom scrollbar for policy modals */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide-react": "https://esm.sh/lucide-react@^0.462.0",
+        "framer-motion": "https://esm.sh/framer-motion@^11.11.17",
+        "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+        "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.46.1",
+        "react-dom/": "https://esm.sh/react-dom@^19.0.0/",
+        "react": "https://esm.sh/react@^19.0.0",
+        "react/": "https://esm.sh/react@^19.0.0/"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="transition-colors duration-500">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

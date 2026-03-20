@@ -1,0 +1,27 @@
+{
+  "name": "braids-by-jaira-|-luxury-protective-styling-&-hair-artistry",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "lucide-react": "^0.462.0",
+    "framer-motion": "^11.11.17",
+    "@supabase/supabase-js": "^2.46.1",
+    "react-dom": "^19.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "wrangler": "^4.9.0"
+  }
+}

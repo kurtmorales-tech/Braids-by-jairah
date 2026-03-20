@@ -1,0 +1,6 @@
+name = "bb-jairah-consult-api"
+main = "worker/src/index.ts"
+compatibility_date = "2026-03-19"
+
+[observability.logs]
+enabled = true
